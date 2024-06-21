@@ -4,10 +4,6 @@ from gurobipy import *
 import socket
 import myDictionary as md
 import sys, os
-<<<<<<< HEAD
-=======
-# if os.path.exists(r'log/optMIS_MNL_%s_%s_Difficulty%s.csv'%(dataID,rep,difficulty)): sys.exit(1)
->>>>>>> b105aa0 (for merging)
 
 machineName = socket.gethostname()
 

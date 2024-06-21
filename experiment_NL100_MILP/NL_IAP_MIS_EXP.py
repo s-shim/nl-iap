@@ -5,10 +5,6 @@ import socket
 import myDictionary as md
 from itertools import combinations
 import sys, os
-<<<<<<< HEAD
-=======
-# if os.path.exists(r'log/optMIS_NL_lambda%s_%s_%s_Difficulty%s.csv'%(int(logSum * 100),dataID,rep,difficulty)): sys.exit(1)
->>>>>>> b105aa0 (for merging)
 
 machineName = socket.gethostname()
 logSum = 1
