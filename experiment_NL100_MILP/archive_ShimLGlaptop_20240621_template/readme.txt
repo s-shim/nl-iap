@@ -1,0 +1,1 @@
+This folder is only a template. After experiment, create an archive folder like this template and copy the log and the result folders into the archive folder. If possible, make a readme file profiling the experiment.

@@ -1,0 +1,42 @@
+
+Gurobi 10.0.2 (win64) logging started Fri Jun 21 03:44:21 2024
+
+Set parameter LogFile to value "log/log_difficulty1_MNL_DESKTOP-S7OVCUR_0_5.txt"
+Gurobi Optimizer version 10.0.2 build v10.0.2rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 22440 rows, 4329 columns and 48543 nonzeros
+Model fingerprint: 0xb99870bd
+Variable types: 2331 continuous, 1998 integer (1998 binary)
+Coefficient statistics:
+  Matrix range     [9e-05, 1e+04]
+  Objective range  [1e+02, 6e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective -0.0000000
+Presolve removed 228 rows and 117 columns
+Presolve time: 0.32s
+Presolved: 22212 rows, 4212 columns, 49219 nonzeros
+Found heuristic solution: objective 2416.2948460
+Variable types: 2268 continuous, 1944 integer (1944 binary)
+Root relaxation presolved: 19055 rows, 2268 columns, 40268 nonzeros
+
+Extra simplex iterations after uncrush: 739
+
+Root relaxation: objective 1.011979e+05, 3695 iterations, 0.34 seconds (0.19 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 101197.910    0 1164 2416.29485 101197.910  4088%     -    2s
+H    0     0                    44694.388038 101197.910   126%     -    2s
+H    0     0                    50855.954538 101197.910  99.0%     -    2s
+H    0     0                    52350.455417 101025.995  93.0%     -    3s
+H    0     0                    85939.660311 95283.6914  10.9%     -    3s
+     0     0 95283.6914    0 1163 85939.6603 95283.6914  10.9%     -    3s
+     0     0 95109.5926    0 1210 85939.6603 95109.5926  10.7%     -    4s
+H    0     0                    86511.462750 95103.0487  9.93%     -    4s
+     0     0 95103.0487    0 1213 86511.4627 95103.0487  9.93%     -    4s
+     0     0 95103.0487    0 1213 86511.4627 95103.0487  9.93%     -    4s
