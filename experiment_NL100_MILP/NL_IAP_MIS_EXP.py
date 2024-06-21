@@ -5,7 +5,6 @@ import socket
 import myDictionary as md
 from itertools import combinations
 import sys, os
-if os.path.exists(r'log/optMIS_NL_lambda%s_%s_%s_Difficulty%s.csv'%(int(logSum * 100),dataID,rep,difficulty)): sys.exit(1)
 
 machineName = socket.gethostname()
 logSum = 1
@@ -26,6 +25,8 @@ times = []
 accurates = []
 
 # for rep in range(numReps):            
+
+if os.path.exists(r'result/resultMIS_NL_lambda%s_%s_%s_Difficulty%s.csv'%(int(logSum*100),dataID,rep,difficulty)): sys.exit(1)
 
 lines = pd.read_csv('../data/lines/lines_%s.csv'%dataID)
 

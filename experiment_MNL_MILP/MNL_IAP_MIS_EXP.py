@@ -4,7 +4,6 @@ from gurobipy import *
 import socket
 import myDictionary as md
 import sys, os
-if os.path.exists(r'log/optMIS_MNL_%s_%s_Difficulty%s.csv'%(dataID,rep,difficulty)): sys.exit(1)
 
 machineName = socket.gethostname()
 
@@ -24,6 +23,8 @@ accurates = []
 
 # for rep in range(numReps):            
     
+if os.path.exists(r'result/resultMIS_MNL%s_%s_Difficulty%s.csv'%(dataID,rep,difficulty)): sys.exit(1)
+
 lines = pd.read_csv('../data/lines/lines_%s.csv'%dataID)
 
 if difficulty == 1:
