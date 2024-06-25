@@ -7,6 +7,7 @@ import copy
 import random
 import time
 import datetime
+import os, sys
 import multiprocessing as mp
 
 for difficulty in [1,2,3]:    
@@ -24,6 +25,7 @@ for difficulty in [1,2,3]:
                 logSum = 1
                 machineName = socket.gethostname()
 
+                if os.path.exists(r'result/result_ARR_NL_%s_%s_logSum%s_Difficulty%s.csv'%(dataID,rep,int(logSum*100),difficulty)): sys.exit(1)
                 lines = pd.read_csv('../data/lines/lines_%s.csv'%dataID)
 
                 if difficulty == 1:
